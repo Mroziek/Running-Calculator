@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RunningCalculatorWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Running Calculator" Height="488.857" Width="443.524">
+    <Grid Margin="0,0,-0.286,15">
+
+        <TextBox x:Name="HoursText" HorizontalAlignment="Left" Height="23" Margin="76,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" />
+        <TextBox x:Name="MinutesText" HorizontalAlignment="Left" Height="23" Margin="205,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="SecondsText" HorizontalAlignment="Left" Height="23" Margin="337,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="DistanceTextKM" HorizontalAlignment="Left" Height="23" Margin="205,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="DistanceTextM" HorizontalAlignment="Left" Height="23" Margin="337,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="CalculateButton" Content="Calculate Average Pace" HorizontalAlignment="Left" Margin="31,156,0,0" VerticalAlignment="Top" Width="209" Click="CalculateButton_Click" Height="39" FontWeight="Bold" FontSize="16"/>
+
+        <Label x:Name="PaceText" Content="0:00" HorizontalAlignment="Left" Margin="278,156,0,0" VerticalAlignment="Top" Height="43" Width="157" RenderTransformOrigin="1.458,0.868" FontWeight="Bold" FontSize="20" />
+        <Label Content="Hours:" HorizontalAlignment="Left" Margin="31,49,0,0" VerticalAlignment="Top" Height="42" Width="45"/>
+        <Label Content="Average Pace Calculator" HorizontalAlignment="Left" Margin="31,12,0,0" VerticalAlignment="Top" Height="32" Width="239" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Minutes:" HorizontalAlignment="Left" Margin="150,49,0,0" VerticalAlignment="Top" Height="27" Width="55"/>
+        <Label Content="Seconds:" HorizontalAlignment="Left" Margin="278,49,0,0" VerticalAlignment="Top" Height="42" Width="59"/>
+        <Label Content="Distance:" HorizontalAlignment="Left" Margin="89,87,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="KM:" HorizontalAlignment="Left" Margin="169,89,0,0" VerticalAlignment="Top"/>
+        <Label Content="Meters:" HorizontalAlignment="Left" Margin="283,91,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FF606060" HorizontalAlignment="Left" Height="6" Margin="0,225,0,0" Stroke="#FF595959" VerticalAlignment="Top" Width="438"/>
         
+        
+        
+        <Label Content="Step Length Calculator" HorizontalAlignment="Left" Margin="31,251,0,0" VerticalAlignment="Top" Height="32" Width="239" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Seconds:" HorizontalAlignment="Left" Margin="280,288,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cadence:" HorizontalAlignment="Left" Margin="147,334,0,0" VerticalAlignment="Top"/>
+        <Label Content="Minutes:" HorizontalAlignment="Left" Margin="150,288,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="StepLengthText" Content="0,00m" HorizontalAlignment="Left" Margin="280,382,0,0" VerticalAlignment="Top" Height="43" Width="157" FontWeight="Bold" FontSize="20" />
+        <Label Content="Pace per KM:" HorizontalAlignment="Left" Margin="38,288,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            
+        <Button x:Name="CalculateStepButton" Content="Calculate Average Step Length" HorizontalAlignment="Left" Margin="31,382,0,0" VerticalAlignment="Top" Width="209" Click="CalculateStepButton_Click" Height="39" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="PaceMinutesTB" HorizontalAlignment="Left" Height="23" Margin="205,292,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" />
+        <TextBox x:Name="CadenceTB" HorizontalAlignment="Left" Height="23" Margin="205,338,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" />
+        <TextBox x:Name="PaceSecondsTB" HorizontalAlignment="Left" Height="23" Margin="337,291,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="50" />
+
+
     </Grid>
 </Window>
